@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: unzip -q Ultron-offline.zip
+      - run: unzip -q Jarvis-v7.zip
       - uses: actions/setup-java@v4
         with: { distribution: temurin, java-version: 17 }
       - uses: gradle/actions/setup-gradle@v4
@@ -13,4 +13,4 @@ jobs:
       - run: gradle assembleDebug
         working-directory: Jarvis
       - uses: actions/upload-artifact@v4
-        with: { name: Ultron-apk, path: Ultron/app/build/outputs/apk/debug/*.apk }
+        with: { name: Jarvis-apk, path: Jarvis/app/build/outputs/apk/debug/*.apk }
