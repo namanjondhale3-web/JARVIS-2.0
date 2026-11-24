@@ -13,4 +13,4 @@ jobs:
       - run: gradle assembleDebug
         working-directory: Jarvis
       - uses: actions/upload-artifact@v4
-        with: { name: Jarvis-apk, path: Jarvis/app/build/outputs/apk/debug/*.apk }
+        with: { name: Ultron-apk, path: Ultron/app/build/outputs/apk/debug/*.apk }
